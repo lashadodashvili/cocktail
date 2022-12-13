@@ -1,13 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../logo.svg'
+import logo from '../logo/cocktail.png'
 
 const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='nav-center'>
         <Link to="/">
-          <img src={logo} alt="cocktail db logo " className='logo'></img>
+          <div className='logo-div'>
+            <img src={logo} alt="cocktail db logo " className='logo'></img>
+            <div>COCKTAILS</div>
+          </div>
+
+
         </Link>
         <ul className='nav-links'>
           <li>
